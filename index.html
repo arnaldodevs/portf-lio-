@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arnaldo André Domingos — Desenvolvedor Web</title>
+<meta name="description" content="Arnaldo André Domingos — Desenvolvedor Web em Angola. Plataformas full-stack para problemas reais: identidade, saúde, educação.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <div class="nav-mark">arnaldo<span>@</span>dev</div>
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button id="btn-pt" class="active" onclick="setLang('pt')">PT</button>
+      <button id="btn-en" onclick="setLang('en')">EN</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="terminal">
+      <div class="terminal-bar">
+        <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
+        <span>arnaldo@sequele:~$</span>
+      </div>
+      <div class="terminal-body" id="terminalBody"></div>
+    </div>
+
+    <div class="hero-content">
+      <span class="eyebrow" data-i18n="hero_eyebrow"></span>
+      <h1 class="h1">Arnaldo André Domingos</h1>
+      <p class="role" data-i18n="hero_role"></p>
+      <p class="mission" data-i18n="hero_mission"></p>
+      <div class="cta-row">
+        <button type="button" class="btn btn-primary" onclick="scrollToSection('projetos')" data-i18n="hero_cta1"></button>
+        <a href="https://wa.me/244937140075" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="hero_cta2"></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="sobre">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="eyebrow_about"></span>
+      <h2 class="h2" data-i18n="about_title"></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p data-i18n="about_p1"></p>
+        <p class="mission-line" data-i18n="about_mission"></p>
+      </div>
+      <div class="status-card">
+        <div class="status-row"><span class="status-key">location</span><span class="status-val">Sequele, Angola</span></div>
+        <div class="status-row"><span class="status-key">education</span><span class="status-val" data-i18n="status_edu"></span></div>
+        <div class="status-row"><span class="status-key">languages</span><span class="status-val">PT &middot; EN</span></div>
+        <div class="status-row"><span class="status-key">github</span><span class="status-val"><a href="https://github.com/arnaldolk" target="_blank" rel="noopener">arnaldolk</a></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section id="projetos">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="eyebrow_projects"></span>
+      <h2 class="h2" data-i18n="projects_title"></h2>
+    </div>
+
+    <div class="projects-list">
+      <div class="project-card">
+        <div class="project-top">
+          <span class="project-name">Zênit Angola</span>
+          <span class="domain-tag" data-i18n="domain_edu"></span>
+        </div>
+        <p class="project-desc" data-i18n="proj_zenit"></p>
+        <p class="project-stack">PHP &middot; MySQL &middot; HTML &middot; CSS &middot; JavaScript</p>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <span class="project-name">ARIS</span>
+          <span class="domain-tag" data-i18n="domain_identity"></span>
+        </div>
+        <p class="project-desc" data-i18n="proj_aris"></p>
+        <p class="project-stack">HTML &middot; CSS &middot; JavaScript &middot; PHP &middot; MySQL</p>
+        <p class="project-note" data-i18n="note_unhosted_aris"></p>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <span class="project-name">CodeFarma</span>
+          <span class="domain-tag" data-i18n="domain_health"></span>
+        </div>
+        <p class="project-desc" data-i18n="proj_codefarma"></p>
+        <p class="project-stack">HTML &middot; CSS &middot; JavaScript &middot; PHP &middot; MySQL</p>
+        <p class="project-note" data-i18n="note_unhosted_codefarma"></p>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <span class="project-name">CIS — Code IMPTEL Store</span>
+          <span class="domain-tag" data-i18n="domain_community"></span>
+        </div>
+        <p class="project-desc" data-i18n="proj_cis"></p>
+        <p class="project-stack">HTML &middot; CSS &middot; JavaScript &middot; PHP &middot; MySQL</p>
+        <a class="project-link" href="https://cis.freedev.app" target="_blank" rel="noopener"><span data-i18n="view_project"></span> &rarr;</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <span class="project-name">Code Stark — Microcrédito</span>
+          <span class="domain-tag" data-i18n="domain_finance"></span>
+        </div>
+        <p class="project-desc" data-i18n="proj_codestark"></p>
+        <p class="project-stack">HTML &middot; CSS &middot; JavaScript &middot; PHP &middot; MySQL</p>
+        <p class="project-note" data-i18n="note_unhosted_codestark"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section id="competencias">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="eyebrow_skills"></span>
+      <h2 class="h2" data-i18n="skills_title"></h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3 data-i18n="skill_frontend"></h3>
+        <div class="skill-item"><div class="skill-name">HTML &middot; CSS &middot; JavaScript</div><div class="skill-note" data-i18n="note_frontend"></div></div>
+      </div>
+      <div class="skill-group">
+        <h3 data-i18n="skill_backend"></h3>
+        <div class="skill-item"><div class="skill-name">PHP &middot; MySQL</div><div class="skill-note" data-i18n="note_backend"></div></div>
+      </div>
+      <div class="skill-group">
+        <h3 data-i18n="skill_tools"></h3>
+        <div class="skill-item"><div class="skill-name" data-i18n="tool_vibe"></div><div class="skill-note" data-i18n="note_vibe"></div></div>
+        <div class="skill-item"><div class="skill-name" data-i18n="tool_maint"></div><div class="skill-note" data-i18n="note_maint"></div></div>
+      </div>
+      <div class="skill-group">
+        <h3 data-i18n="skill_security"></h3>
+        <div class="skill-item"><div class="skill-name" data-i18n="tool_pentest"></div><div class="skill-note" data-i18n="note_pentest"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section id="contacto">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="eyebrow_contact"></span>
+      <h2 class="h2" data-i18n="contact_title"></h2>
+    </div>
+
+    <div class="contact-block">
+      <div class="brace">{</div>
+      <div class="contact-row"><span class="contact-key">"email"</span>: <span class="contact-val"><a href="mailto:arnaldoestudo2@gmail.com">"arnaldoestudo2@gmail.com"</a></span>,</div>
+      <div class="contact-row"><span class="contact-key">"phone"</span>: <span class="contact-val"><a href="tel:+244937140075">"+244 937 140 075"</a></span>,</div>
+      <div class="contact-row"><span class="contact-key">"github"</span>: <span class="contact-val"><a href="https://github.com/arnaldolk" target="_blank" rel="noopener">"github.com/arnaldolk"</a></span>,</div>
+      <div class="contact-row"><span class="contact-key">"location"</span>: <span class="contact-val">"Sequele, Angola"</span></div>
+      <div class="brace">}</div>
+    </div>
+
+    <div class="cta-row contact-cta">
+      <a href="mailto:arnaldoestudo2@gmail.com" class="btn btn-primary" data-i18n="contact_cta"></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-status">open_to_work: true<span class="sep">|</span>open_to_freelance: true</div>
+    <div class="footer-copy">&copy; 2026 Arnaldo André Domingos</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
